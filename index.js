@@ -188,7 +188,6 @@ class Instructor extends Lambdasian {
   }
 
   grade(student, subject) {
-    student.name = this.name;
     return `${student.name} receives a perfect score on ${subject}`;
   }
 }
@@ -251,6 +250,10 @@ class ProjectManager extends Instructor {
   debugsCode(student, subject) {
     return `${this.name} debugs ${student.name}'s code on ${subject}`;
   }
+
+  // grade(student, gradClassName) {
+  //   return `${student.name} did great in ${gradClassName}`;
+  // }
 }
 
 /*
